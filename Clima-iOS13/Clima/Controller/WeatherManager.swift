@@ -1,9 +1,12 @@
+//
 //  WeatherManager.swift
 //  Clima
 //
-//  Created by Ayush Khurana on 6/27/22.
+//  Created by Ayush Khurana on 8/25/23.
+
 //
 
+import Foundation
 import Foundation
 import CoreLocation
 
@@ -22,8 +25,8 @@ struct WeatherManager {
         performRequest(with: urlString)
     }
     
-    func fetchWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
-        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitude)"
+    func fetchWeather(latitude: CLLocationDegrees, longitute: CLLocationDegrees) {
+        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitute)"
         performRequest(with: urlString)
     }
     
